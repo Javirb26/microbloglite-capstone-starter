@@ -25,7 +25,7 @@ body {
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #d4eaf7;
+    background: linear-gradient(135deg, #6b47ff, #ff6b6b);;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
@@ -37,17 +37,31 @@ body {
   
   .post {
     border-radius: 9px;
-    background-color: #fffefb;
+    background-color: #505152;
+  }
+
+  .user-name {
+    color: white;
+  }
+
+  .user-email {
+    color: white;
   }
   
   .header {
     text-align: center;
+    color: white;
   }
   
   .title {
     text-align: center;
     margin-bottom: 30px;
+    color: white;
   }
+
+.post::placeholder {
+  color: white;
+}
   
   .profile-header {
     text-align: center;
@@ -65,23 +79,28 @@ body {
   }
   
   .post {
-    border: 1px solid #ccc;
+    border: 1px solid #3d0042;
     padding: 10px;
     margin-bottom: 10px;
     margin-top: 10px;
+    color: white;
   }
   
   .post-date {
     font-style: italic;
-    color: #888;
+    color: white;
+  }
+
+  .post-content {
+    color: white;
   }
 
   hr.break {
-    border: 2px solid #003142;
+    border: 2px solid #3d0042;
     border-radius: 3px;
   }
 
   hr.break2 {
-    border: 2px solid #003142;
+    border: 2px solid #3d0042;
     border-radius: 3px;
   }

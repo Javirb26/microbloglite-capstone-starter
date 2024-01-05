@@ -10,15 +10,19 @@
 
 .registration-form {
   text-align: center;
-  padding-top: 150px;
+  margin-top: 110px;
   margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 50px;
 }
 
-.text-charcoal{
+.text-charcoal {
   font-size: 16px;
 }
 
-input{
+input {
   width: 100%;
   padding: 10px;
   margin: 8px 0;
@@ -27,11 +31,11 @@ input{
   border-radius: 4px;
 }
 
-#showpasswordcheckbox{
+#showpasswordcheckbox {
   margin-left: 5px;
 }
 
-#registerButton{
+#registerButton {
   background-color: #166ba3;
   color: #fff;
   padding: 12px 20px;
@@ -42,6 +46,6 @@ input{
   transition: background-color 0.3s ease;
 }
 
-#registerButton:hover{
+#registerButton:hover {
   background-color: #2980db;
 }

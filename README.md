@@ -22,6 +22,12 @@ Y allows users to register, login, logout, make post, "delete all post", and vie
 
 <img src="/images/post_Page.gif">
 
+## Profile Page
+
+- In this page you will see the profile, what posts you have made as well as create a post that will display on the post page.
+
+<img src="/images/profile_Page.gif">
+
 ## Logging Out
 
 - Log out button works as intented
@@ -122,7 +128,7 @@ function getAllPosts() {
 ```
 
 ## Documentation
-- <a href="http://microbloglite.us-east-2.elasticbeanstalk.com/docs/">MicroblogLite API Docs<s/a>
+- <a href="http://microbloglite.us-east-2.elasticbeanstalk.com/docs/">MicroblogLite API Docs</a>
 
 ## Authors
 

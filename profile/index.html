@@ -17,8 +17,8 @@
   </head>
   <body>
     <!-- Navbar Content -->
-    <nav class="navbar navbar-expand-md">
-      <div class="container">
+    <nav class="navbar navbar-expand-md py-4 sticky-top bg-dark">
+      <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarNav" aria-controls="navbarNav"
           aria-expanded="false" aria-label="Toggle navigation">
@@ -28,32 +28,29 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav d-flex align-items-center">
             <li class="nav-item">
-              <a class="nav-link" href="/index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/posts/index.html">Posts</a>
+              <a class="nav-link fw-bold text-white" href="/posts/index.html">Posts</a>
             </li>
           </ul>
         </div>
 
         <a class="navbar-brand logo-container" href="../index.html">
           <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50">
-            <image href="../images/Y_logo_dark.svg" width="50" height="50" id="logo" />
+            <image href="../images/Y_logo_light.svg" width="50" height="50" id="logo" />
           </svg>
         </a>
 
         <div>
-          <button id="logout" class="btn btn-dark">LOGOUT</button>
+          <button id="logout" class="btn btn-light">LOGOUT</button>
         </div>
       </div>
     </nav>
 
     <div class="profile-container">
       <div class="profile-header">
-        <img src="/images/test pic.png" alt="Profile Picture"
+        <img src="/images/profile_pic.png" alt="Profile Picture"
           class="profile-picture">
-        <h1>Berleezy Eugh</h1>
-        <p>Email: Eugh@gmail.com</p>
+        <h1 class="user-name">Berleezy Eugh</h1>
+        <p class="user-email">Email: Eugh@gmail.com</p>
       </div>
 
       <hr class="break2" />
@@ -72,35 +69,29 @@
 
       <hr class="break" />
 
-      <div class="profile-posts">
-        <h3 class="title">Your Posts</h3>
-        <div class="post">
-          <p class="post-date">January 5, 2024</p>
-          <p class="post-content">WHATS GOOD YALL WELCOME BACK! New video on my
-            channel LETS GET IT!</p>
-        </div>
-        <div class="post">
-          <p class="post-date">January 4, 2024</p>
-          <p class="post-content">Some things you gotta get right the first
-            time.</p>
-        </div>
-        <div class="post">
-          <p class="post-date">January 3, 2024</p>
-          <p class="post-content">Words can't express the amount of gratitude I
-            feel right now. Thank you to everyone who came out to celebrate my
-            birthday with me. It feels like a dream. I love you all.</p>
-        </div>
-        <div class="post">
-          <p class="post-date">January 1, 2024</p>
-          <p class="post-content">Happy New Year everyone!!! 2024 LETS GET IT!
-            Eugh</p>
-        </div>
-
-      </div>
+      <div class="profile-posts" id="profile-posts"></div>
     </div>
     <div id="all-posts"></div>
     <!-- Footer Content -->
-    <footer></footer>
+    <footer class="bg-dark py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mb-5">
+            <a class="navbar-brand logo-container" href="../index.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50">
+                <image href="../images/Y_logo_light.svg" width="50" height="50" />
+              </svg>
+            </a>
+          </div>
+          <div class="col-md-12 mt-4 text-center text-white">
+          </div>
+          <div class="col-md-12 border-top text-center text-white pt-5">
+            <span class="small me-5">Copyright</span>
+            <span class="small ms-5">terms and condition</span>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script type="module" src="/profile/profile.js"></script>
     <script

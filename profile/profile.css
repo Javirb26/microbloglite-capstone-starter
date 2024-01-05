@@ -15,11 +15,23 @@ body {
     margin: 0;
     padding: 0;
   }
-  
-  /* #logo {
-    display: flex;
-    justify-content: center;
-  } */
+
+  .card {
+    margin: 30px 0;
+    padding: 20px;
+    border: 1px solid #3d0042;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .username {
+    font-weight: bold;
+  }
+
+  .post-text {
+    margin-top: 10px;
+    color: #343a40;
+  }
   
   .profile-container {
     max-width: 800px;
@@ -86,14 +98,6 @@ body {
     color: white;
   }
   
-  .post-date {
-    font-style: italic;
-    color: white;
-  }
-
-  .post-content {
-    color: white;
-  }
 
   hr.break {
     border: 2px solid #3d0042;

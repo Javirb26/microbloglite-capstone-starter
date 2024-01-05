@@ -21,7 +21,6 @@ window.onload = () => {
 };
 
 // Initialized variables
-// const apiBaseURL = "http://microbloglite.us-east-2.elasticbeanstalk.com/";
 const createPostForm = document.getElementById('create-post-form');
 const allPosts = document.getElementById('all-posts')
 
@@ -81,3 +80,50 @@ createPostForm.onsubmit = (e) => {
 
     createPostForm.reset();
 };
+
+function getAllPosts() {
+
+    let profilePostsEl = document.getElementById('profile-posts');
+    profilePostsEl.innerHTML = "<p>Loading posts...</p>";  // Display a loading message
+  
+    const loginData = getLoginData();
+    const options = {
+        method: "GET",
+        headers: {
+            Authorization: `Bearer ${loginData.token}`,
+        },
+    };
+  
+    fetch("http://microbloglite.us-east-2.elasticbeanstalk.com/api/posts?limit=100&offset=0&username=Berleezy", options)
+        .then((res) => res.json())
+        .then((posts) => {
+            profilePostsEl.innerHTML = "";  // Clear the loading message
+  
+            if (posts.length === 0) {
+                profilePostsEl.innerHTML = "<p>No posts available.</p>";  // Display a message for no posts
+            } else {
+                posts.forEach((post) => {
+                    let postEl = document.createElement('div');
+                    postEl.classList.add('card');
+  
+                    let usernameEl = document.createElement('div');
+                    usernameEl.classList.add('username');
+                    usernameEl.textContent = `${post.username}`;
+  
+                    let postTextEl = document.createElement('div');
+                    postTextEl.classList.add('post-text');
+                    postTextEl.textContent = post.text;
+  
+                    postEl.appendChild(usernameEl);
+                    postEl.appendChild(postTextEl);
+  
+                    profilePostsEl.appendChild(postEl);
+                });
+            }
+            console.log(posts);
+        })
+        .catch((err) => {
+            console.error('Error fetching posts:', err);
+            profilePostsEl.innerHTML = "<p>Error fetching posts.</p>";  // Display an error message
+        });
+  } getAllPosts()

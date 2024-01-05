@@ -1,3 +1,23 @@
+<img src='/images/Y_logo_light.svg' width='50px'>
+
+# microBlogLite - Capstone Project
+
+This is the
+## Home Page
+<img src="/images/home_Page.gif">
+
+## Register Page
+<img src="/images/register_Page.gif">
+
+## Post Page
+<img src="/images/post_Page.gif">
+
+## Logging Out
+<img src="/images/log_Out.gif">
+
+
+
+
 # Enjoy the Microblog Project and the MicroblogLite API!
 
 Don't forget to read the [*MicroblogLite* API docs](https://microbloglite.herokuapp.com/docs/) and experiment with the API in *Postman!*
